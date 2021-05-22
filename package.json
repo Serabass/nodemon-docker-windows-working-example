@@ -6,12 +6,17 @@
   "main": "dist/server.js",
   "scripts": {
     "up": "docker-compose up",
+    "up-d": "docker-compose up -d",
+    "kill": "docker-compose kill",
+    "down": "docker-compose down",
+    "bash": "docker exec -it node-docker-nodemon_chat_1 bash",
     "docker-test:watch": "docker exec -i node-docker-nodemon_chat_1 npx jest --watch",
     "docker-test:test": "docker exec -i node-docker-nodemon_chat_1 \"npx jest\"",
     "nodemon": "nodemon --legacy-watch -x npx ts-node src/server.ts",
     "test": "jest"
   },
   "dependencies": {
+    "@types/express": "^4.17.11",
     "@types/jest": "^26.0.23",
     "express": "^4.16.1",
     "jest": "^26.6.3",

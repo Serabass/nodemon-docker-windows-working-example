@@ -8,8 +8,8 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
-app.get('/', (req, res) => {
-  res.send('NIC\n');
+app.get('/', (req: any, res: any) => {
+  res.send('NIC4\n');
 });
 
 app.listen(PORT, HOST);
