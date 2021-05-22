@@ -4,4 +4,5 @@ chat:
     - '9000:8080'
   volumes:
     - .:/usr/src/app
+    - ./nginx:/etc/sites-available
     - /usr/src/app/node_modules
